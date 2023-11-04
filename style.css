@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+body{
+background: linear-gradient(
+    135deg,
+    #f1fdfff1,
+    #c2c2bd 
+    );
+    
+}
+
+header {
+    background-color: #ffffff;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px ;
+}
+
+.logo{
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    padding-left: 15px;
+
+}
+
+.navigation a{
+    color: #4a4b4d;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #6232db;
+}
+
+section {
+    padding: 90px 100px;
+    letter-spacing: 0.5px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 0.9em;
+}
+.top{
+    text-align: center;
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 150px 250px ;  
+}
+
+.game-btn{
+    color: rgb(231, 228, 223);
+    background-color: rgb(61, 61, 61);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    transition: 0.5s ease;
+
+}
+
+.game-btn:hover{
+    background-color: rgb(61, 61, 61);
+    transform: scale(1.1);
+
+}
+
+
+
+.table{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #121311e3;
+}
+.table a{
+    text-decoration: none;
+    color: #464944e3;
+}
+.table a:hover{
+    color: #3c2c63;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+    float:right;
+
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #ebebeb;
+    color: rgb(24, 23, 23);
+    transform: rotateY(180deg);
+    padding-top: 30px;
+
+  }
+
+  
